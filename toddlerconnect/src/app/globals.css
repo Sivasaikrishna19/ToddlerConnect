@@ -16,18 +16,54 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../assets/fonts/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url('../assets/fonts/Lato-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Lato-Black';
+  src: url('../assets/fonts/Lato-Black.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Lato-Italic';
+  src: url('../assets/fonts/Lato-Italic.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  font-family: 'Lato';
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* TODO: Add support for other browsers */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(226, 219, 219);
+  outline: 0 solid rgb(242, 246, 250);
 }
